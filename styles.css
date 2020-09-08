@@ -35,18 +35,19 @@
     background: var(--primary);
   }
   input,textarea{
-    background: rgba(255,255,255,0.05);
+    background:#545454;
     padding: 10px 16px;
     border-radius: 20px;
-    border: 2px solid #9893D8;
-    color: #f2f2f2;
+    border: 2px solid var(--primary);
+    color: #ffffff;
+    font-family: 'Open-Sans';
   }
   
   /* fonts */
 
   @font-face {
     font-family: 'Open-Sans';
-    src: url('assets/fonts/open.ttf')
+    src: url('assets/fonts/Amatic_regular.ttf')
     }
    h1,h2,h3,h4{
     font-family: 'Open-Sans';
@@ -91,7 +92,7 @@
         padding: 0 20px 20px 20px;
     }
     .about-text{
-        grid-column: 1/6;
+        grid-column: 1/4;
     }
     .about-img{
         grid-column: 1/4;
@@ -139,7 +140,7 @@
     }
 
     #portfolio img{
-       border-radius: 25px;
+       border-radius: 10px;
     }
 
     #development{
@@ -154,7 +155,7 @@
     }
     #development li{
         padding: 10px; 
-        background: rgba(0,0,0,0.2);
+        background: #545454;
         /* with 8 columns total gets us 2 on top and bottom */
         grid-column: span 4;
         text-align: center;
@@ -169,7 +170,7 @@
     }
     #contact {
         padding: 30px 20px;
-        background:  darkorange;
+        background: grey;
     }
     #contact h3, #contact p{
         text-align: center;
@@ -191,7 +192,7 @@
     footer{
         padding: 30px 20px;
         /* use background-color when also using image*/
-        background-color: #0A0B5B;
+        background-color: var(--secondary);
         background-image: url("");
         background-size: 40%;
         background-repeat: no-repeat;
