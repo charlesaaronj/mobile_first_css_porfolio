@@ -1,7 +1,7 @@
 /* variables */
 :root{
-    --primary: #d6d6d6;
-    --secondary: #2c2c2c;
+    --primary: #303030;
+    --secondary: #e2e2e2;
   }
   
   /* reset */
@@ -17,9 +17,7 @@
   /* base styles */
   body{
     background: var(--secondary);
-    /* background-image: url('assets/back_white.jpg'); */
     overflow-x: hidden;
-    background-size: contain;
   }
   .button{
     background: none;
@@ -28,7 +26,7 @@
     padding: 6px 12px;
     border-radius: 20px;
     box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
-    display: inline-block;
+    display: block;
   }
   .button:hover{
     color: #222;
@@ -47,19 +45,24 @@
 
   @font-face {
     font-family: 'Open-Sans';
-    src: url('assets/fonts/Amatic_regular.ttf')
+    src: url('assets/fonts/Roboto-Light.ttf')
     }
+    @font-face {
+        font-family: 'Open-Sans_bold';
+        src: url('assets/fonts/Roboto-Medium.ttf')
+        }
    h1,h2,h3,h4{
-    font-family: 'Open-Sans';
+    font-family: 'Open-Sans_bold';
     color: var(--primary);
     font-weight: 500;
+    line-height: 150%;
     }
    p,a,li{
     font-family: 'Open-Sans';
     color: var(--primary);
     }
     h1,h3{
-    font-size: 1.1em;
+    font-size: 1.2em;
     }
     h2{
     font-size: 1.1em;
@@ -68,72 +71,76 @@
     font-size: 1.1em;
     }
     .blurb{
-    font-size: 1.1em;
+    font-size: 0.9em;
+    line-height: 150%;
+    font-family: 'Open-Sans';
     }   
   /* mobile styles */
     .grid{
         display: grid;
         grid-template-columns: repeat(8,1fr);
         gap: 10px;
+        text-align: center;
     }
     .site-nav{
         margin: 0 20px;
+
     }
     .site-nav ul{
         display: none;
     }
     .site-nav h1{
-        grid-column: span 6;
+        grid-column: span 8;
         grid-row: 1;
         padding-bottom: 10px;
         border-bottom: 3px solid var(--primary);
     }
     #about{
-        padding: 0 20px 20px 20px;
+        padding: 20px 20px;
+        background: #f3f3f3;
     }
     .about-text{
-        grid-column: 1/4;
+        grid-column: span 8;
     }
     .about-img{
-        grid-column: 1/4;
-        margin-top: 10px
+        grid-column: span 8;
     }
     .about-text h2{
-        margin-top: 10px
+        margin: 10px
     }
     .about-img img{
-        width: 200%;
+        width: 100%;
         border-radius: 8px;
     }
     .about-text a{
-        margin: 20px 0 0 0;
+        margin: 10px 0 5px 5px;
         margin-right: 5px;
     }
     /*# because it's an ID */
 
     #portfolio{
-        background: #616161;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom; 
-        padding: 30px 20px;
+        background: var(--secondary); 
+        padding: 20px 20px;
     }
     #portfolio h3{
-        margin-bottom: 0;
+        margin-bottom: 10px;
         text-align: center;
+        
     }
     .implementations a {
-        grid-column: 1/9;
-        margin: 20px 0;
+        grid-column: span 8;
+        margin: 10px 0;
         /*use flex to sit elements next to each other*/
-        display: flex;
+        display: block;
+        
     }
     /* use an asteriks to style everything in anchor tags */
     .implementations a *{
-        margin: 0 20px;
-        max-width: 50%;
+        margin: 5px 0;
+        max-width: 100%;
         /*"self" because we're grabbing multiple things*/
         align-self: center;
+        
     }
     .implementations h4{
         color: pink; 
