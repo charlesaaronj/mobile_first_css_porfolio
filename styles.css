@@ -6,6 +6,7 @@
   }
   
   /* reset */
+  
   body,p,a,ul,li{
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@
   }
   
   /* base styles */
+
   body{
     background: var(--secondary);
     overflow-x: hidden;
@@ -60,6 +62,7 @@
     }
     h1,h3{
     font-size: 1em;
+    font-weight: 800;
     }
     h2{
     font-size: 1.8em;
@@ -78,6 +81,7 @@
     .site-nav{
         margin: 0 0px;
         background: var(--variant);
+        opacity: 0.9;
         position: fixed;
         top: 0;
         width: 100%;
@@ -99,7 +103,6 @@
     }
     .about-text h2{
         text-align: center;
-        
     }
     
     /*# because it's an ID */
