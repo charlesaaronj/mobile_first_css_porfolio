@@ -1,7 +1,8 @@
 /* variables */
 :root{
     --primary: #303030;
-    --secondary: #e2e2e2;
+    --secondary: #f8f8f8;
+    --variant: #f1f1f1;
   }
   
   /* reset */
@@ -33,7 +34,7 @@
     background: var(--primary);
   }
   input,textarea{
-    background:#545454;
+    background:var(--secondary);;
     padding: 10px 16px;
     border-radius: 20px;
     border: 2px solid var(--primary);
@@ -44,38 +45,30 @@
   /* fonts */
 
   @font-face {
-    font-family: 'Open-Sans';
+    font-family: 'Roboto-Light';
     src: url('assets/fonts/Roboto-Light.ttf')
     }
-    @font-face {
-        font-family: 'Open-Sans_bold';
-        src: url('assets/fonts/Roboto-Medium.ttf')
-        }
    h1,h2,h3,h4{
-    font-family: 'Open-Sans_bold';
+    font-family: 'Roboto-Light';
     color: var(--primary);
     font-weight: 500;
     line-height: 150%;
     }
    p,a,li{
-    font-family: 'Open-Sans';
+    font-family: 'Roboto-Light';
     color: var(--primary);
     }
     h1,h3{
-    font-size: 1.2em;
+    font-size: 1em;
     }
     h2{
-    font-size: 1.1em;
+    font-size: 1.8em;
     }
     h4{
     font-size: 1.1em;
     }
-    .blurb{
-    font-size: 0.9em;
-    line-height: 150%;
-    font-family: 'Open-Sans';
-    }   
-  /* mobile styles */
+
+     /* mobile styles */
     .grid{
         display: grid;
         grid-template-columns: repeat(8,1fr);
@@ -83,7 +76,11 @@
         text-align: center;
     }
     .site-nav{
-        margin: 0 20px;
+        margin: 0 0px;
+        background: var(--variant);
+        position: fixed;
+        top: 0;
+        width: 100%;
 
     }
     .site-nav ul{
@@ -91,33 +88,21 @@
     }
     .site-nav h1{
         grid-column: span 8;
-        grid-row: 1;
-        padding-bottom: 10px;
-        border-bottom: 3px solid var(--primary);
+
     }
     #about{
-        padding: 20px 20px;
-        background: #f3f3f3;
+        padding: 100px 20px 30px 20px ;
+        background: var(--secondary);
     }
-    .about-text{
-        grid-column: span 8;
-    }
-    .about-img{
-        grid-column: span 8;
+    .about-buttons{
+        display: none;
     }
     .about-text h2{
-        margin: 10px
+        text-align: center;
+        
     }
-    .about-img img{
-        width: 100%;
-        border-radius: 8px;
-    }
-    .about-text a{
-        margin: 10px 0 5px 5px;
-        margin-right: 5px;
-    }
+    
     /*# because it's an ID */
-
     #portfolio{
         background: var(--secondary); 
         padding: 20px 20px;
@@ -152,7 +137,7 @@
 
     #development{
         padding: 30px 20px;
-        background: grey;
+        background: var(--secondary);;
     }
     #development h3{
         text-align: center;
@@ -177,7 +162,7 @@
     }
     #contact {
         padding: 30px 20px;
-        background: grey;
+        background: var(--secondary);;
     }
     #contact h3, #contact p{
         text-align: center;
