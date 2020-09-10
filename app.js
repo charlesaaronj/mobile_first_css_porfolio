@@ -1,1 +1,1 @@
-alert('Hello');
+document.getElementsByClassName('h3').style.display = 'none';

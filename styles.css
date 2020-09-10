@@ -23,14 +23,14 @@
     background: var(--secondary);
     overflow-x: hidden;
   }
-  .button{
+  /* .button{
     background: none;
     border: 2px solid var(--primary);
     color: var(--primary);
     padding: 6px 12px;
     border-radius: 20px;
     box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
-    display: block;
+    display: block; */
   }
   .button:hover{
     color: #222;
@@ -118,7 +118,7 @@
         text-align: center;
         
     }
-    .implementations a {
+    .implementations {
         grid-column: span 8;
         margin: 10px 0;
         /*use flex to sit elements next to each other*/
@@ -126,7 +126,7 @@
         
     }
     /* use an asteriks to style everything in anchor tags */
-    .implementations a *{
+    .implementations *{
         margin: 5px 0;
         max-width: 100%;
         /*"self" because we're grabbing multiple things*/
@@ -211,8 +211,6 @@
     footer img{
         width: 20px;
     } 
-
-
 
     
   /* small tablet styles */
