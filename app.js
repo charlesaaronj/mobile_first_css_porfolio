@@ -53,3 +53,5 @@ content.classList.remove('is-active');
 noScroll.classList.remove('is-clipped');
 console.log(content); 
 }); 
+
+var accordions = bulmaAccordion.attach(); // accordions now contains an array of all Accordion instances
