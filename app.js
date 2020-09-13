@@ -36,4 +36,20 @@ noScroll.classList.remove('is-clipped');
 console.log(content); 
 });
     
-    
+const buttonOpen3 = document.getElementById('open-3');
+buttonOpen3.addEventListener('click', () => {
+console.log('you clicked me');
+const content = document.getElementById('modal-3')
+content.classList.add('is-active');
+noScroll.classList.add('is-clipped');
+console.log(content);
+});
+
+const buttonClose3 = document.getElementById('close-3');
+buttonClose3.addEventListener('click', () => {
+console.log('you clicked me');
+const content = document.getElementById('modal-3')
+content.classList.remove('is-active');
+noScroll.classList.remove('is-clipped');
+console.log(content); 
+}); 
