@@ -18,17 +18,17 @@
     
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item">
-            Home
-          </a>
-    
           <div class="navbar-item">
-            <a class="navbar-item">
-              More
+            <a href="#imp" class="navbar-item">
+              Implementations
             </a>
-    
-            
-              <a class="navbar-item">
+              <a href="#fed" class="navbar-item">
+                Front End Development
+              </a>
+              <a href="#tpe" class="navbar-item">
+                Theme Park Enthusiast
+              </a>
+              <a href="#contact" class="navbar-item">
                 Contact
               </a>
             </div>
@@ -55,9 +55,9 @@
         <div class="container">
           <h1 class="title mx-6">
             — Hi, I’m an 
-            <a href="" class="href">Implementation Project Manager</a>, 
-            <a href="" class="href">Front-end Developer</a>, and 
-            <a href="" class="href">Theme Park enthusiast</a> 
+            <a href="#imp" class="href">Implementation Project Manager</a>, 
+            <a href="#fed" class="href">Front-end Developer</a>, and 
+            <a href="#tpe" class="href">Theme Park enthusiast</a> 
             living in the Southeast US.
           </h1>
           <h1 class="has-text-right mr-6 mt-3">
@@ -70,7 +70,7 @@
     <div class="container">
     <section class="section">
       <div class="container has-text-centered">
-        <h1 class="title">Implementations</h1>
+        <h1 class="title"><a id="imp"></a>Implementations</h1>
         <h2 class="subtitle my-1">
           A snapshot look at highlights from my 
           implementation career with 
@@ -202,13 +202,14 @@
 
 <section class="full-list">
   <h1 class="has-text-right mr-6 mt-3">
+    Company logos are my own. 
     <a href="https://www.linkedin.com/in/charlesaaronj/" class="href">Full list of implementations</a>
   </h1>
 </section>
 
     <section class="section">
       <div class="container has-text-centered">
-        <h1 class="title">Front End Development</h1>
+        <h1 class="title"><a id="fed"></a>Front End Development</h1>
         <h2 class="subtitle my-1">
           Latest progress on a sub-career in Front End Web Development.
         </h2>
@@ -222,16 +223,20 @@
               <img src="assets/html_1.png" alt="Placeholder image">
           </div>
           <div class="card-content">
-            <div class="content">
-              <h4>HTML</h4>
-              <h5>Tutorials Completed</h5>
-              Coming Soon
+            <div class="tabs">
+              <ul>
+                <li class="is-active">
+                <a id="tutorial-html-link">Tutorials</a></li>
+                <li><a id="portfolio">Portfolio</a></li>
+              </ul>
+            </div>
+            <div class="content is-hidden tutorials" id="tutorial-html-content">
+              <p>Tutorials</p>
               <p />
-              <h5>Tutorials In-progress</h5>
-              Coming Soon
-              <p />
-              <h5>Portfolio</h5>
-              Coming Soon
+              <div class="has-text-right"><a id="open-1">More</a></div>
+            </div>
+            <div class="content is-hidden tutorials">
+              <p>Portfolio</p>
               <p />
               <div class="has-text-right"><a id="open-1">More</a></div>
             </div>
@@ -311,16 +316,51 @@
 
     <section class="section">
       <div class="container has-text-centered">
-        <h1 class="title">Theme Park Enthusiast</h1>
+        <h1 class="title"><a id="tpe"></a>Theme Park Enthusiast</h1>
         <h2 class="subtitle my-1">
           Coming Soon
         </h2>
       </div>
     </section>
+ 
+    <section>
+
+      <div class="columns mx-3 has-text-centered">
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+                <img src="assets/ai.png" alt="Placeholder image">
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.<br />
+                <div class="has-text-right"><a id="open-1">More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="column ">
+          <div class="card">
+            <div class="card-image">
+                <img src="assets/mydp.png" alt="Placeholder image">
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.<br />
+                <div class="has-text-right"><a id="open-2">More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+         
 
     <section class="section">
       <div class="container has-text-centered">
-        <h1 class="title">Contact Me</h1>
+        <h1 class="title"><a id="contact"></a>Contact Me</h1>
         <h2 class="subtitle my-1">
           Coming Soon
         </h2>
@@ -465,6 +505,11 @@
       </div>
     </div>
   </div>
+
+
+
+
+
     <script src="app.js"></script>
   </body>
 </html>
