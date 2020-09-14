@@ -54,12 +54,12 @@ noScroll.classList.remove('is-clipped');
 console.log(content); 
 }); 
 
-const tutorialOpen = document.getElementById('tutorial-html-link');
-console.log(tutorialOpen);
-tutorialOpen.addEventListener('click', () => {
+const htmlOverview = document.querySelector(".html-overview")
+console.log(htmlOverview);
+htmlOverview.addEventListener('click', () => {
 console.log('you clicked me');
-const content = document.getElementById('tutorial-html-content')
-content.classList.remove('is-hidden');
-// noScroll.classList.add('is-clipped');
-// console.log(content);
+const contentOverview = document.querySelector('.html-overview-content')
+contentOverview.classList.add('is-hidden');
+const contentTutorials = document.querySelector('.html-tutorials-content')
+const contentPortfolio = document.querySelector('.html-portfolio-content')
 });
