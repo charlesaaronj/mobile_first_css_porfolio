@@ -4,16 +4,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <!-- <style>
-    .hero-body{
-      background-image: url("/assets/carousel.jpg");
+  <style>
+    .navbar, a.navbar{
+      background: #4e5258;
+      color: #fffff0;
     }
-  </style> -->
+    .navbar-item, .navbar-link, a.navbar-item:hover{
+    color: #f6edd8;
+    background: none;
+    }
+    a.navbar-item:hover{
+    color: #fffff0;
+    }
+    .navbar-burger {
+    color: #f6edd8;
+    }
+    .navbar-menu {
+      background: #4e5258;
+    }
+    body{
+      background: #4e5258;
+      color: #f6edd8;
+    }
+    a{
+      color: #7bbebe;
+    }
+    a:hover{
+      color: #fffff0 
+    }
+    .href{
+      color: #f6edd8;
+    }
+    .title {
+      color: #fffff0;
+    }
+    .subtitle {
+      color: #f6edd8;
+    }
+    .label{
+      color: #f6edd8;
+      font-weight: normal;
+    }
+    .hero-body{
+      background: #7bbebe;
+      border-bottom: 10px double #f6edd8;
+      border-top: 10px double #f6edd8;
+      color: #f6edd8;
+    }
+    .hero.is-light .title{
+      color: #fffff0;
+    }
+    .imp-img{
+      border: 5px double #f6edd8;
+    }
+    .zoom {
+      transition: transform .3s; /* Animation */
+      margin: 0 auto;
+    }
+    .zoom:hover {
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    .help.is-danger {
+    color: #f9bdc9;
+    }   
+    .button.is-link {
+    background-color: #f6edd8;
+    border-color: transparent;
+    color: #4e5258;
+    }
+    .button.is-link:hover {
+    background-color: #fffff0;
+    border-color: transparent;
+    color: #4e5258;
+    }
+    .footer{
+      background: #7bbebe;
+      border-top: 15px double #f6edd8;
+      color: #fffff0;
+    }
+    .modal-card-body{
+      background: #4e5258;
+      color: #fffff0;
+    }
+    
+  </style>
   <title>Aaron Johnston</title>
 </head>
-  <body >
+  <body>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <div class="is-size-4 ml-5 my-2 has-text-weight-semibold">Aaron Johnston</div>
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -60,16 +139,20 @@
     <section class="hero is-light is-bold is-medium">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title mx-2">
+          <h1 class="title mx-2 zoom">
             — Hi, I’m an 
-            Implementation Project Manager, 
-            Front-end Developer, and 
-            Theme Park enthusiast
-            living in the Southeast US.
+            implementation project manager, 
+            novice front-end developer, and 
+            theme park enthusiast
+            living in the southeast US.
           </h1>
           <h1 class="has-text-right mr-6 mt-3">
             <a href="https://www.linkedin.com/in/charlesaaronj/" 
-            class="href">LinkedIn Profile</a>
+            class="href">LinkedIn</a> /
+              <a href="https://www.facebook.com/aeroc33" 
+              class="href">Facebook</a> /
+                <a href="https://twitter.com/charlesaaronj" 
+                class="href">Twitter</a>
           </h1>
         </div>
       </div>
@@ -80,9 +163,9 @@
       <div class="container has-text-centered">
         <h1 class="title"><a id="imp"></a>Implementations</h1>
         <h2 class="subtitle my-1">
-          A snapshot of my 
+          A snapshot of my 10 year
           implementation career at 
-          <a href="https://www.uabmedicine.org/about" class="href">UAB Medicine</a>.
+          <a href="https://www.uabmedicine.org/about">UAB Medicine</a>.
         </h2>
       </div>
 
@@ -95,8 +178,8 @@
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading">Concurrent </p>
-            <p class="title">10-15</p>
+            <p class="heading">% of projects</p>
+            <p class="title">75%</p>
           </div>
         </div>
         <div class="level-item has-text-centered">
@@ -116,69 +199,44 @@
 
       <div class="columns mx-3 has-text-centered pt-3">
       <div class="column">
-        <div class="card">
-          <div class="card-image">
-            <a id="open-1"><img src="assets/med_logo.png" alt="Medtronic Omnitool"></a>
-          </div>
-        </div>
+            <a id="open-1"><img class="imp-img zoom" src="assets/med_logo.png" alt="Medtronic Omnitool"></a>
       </div>
 
       <div class="column">
-        <div class="card">
-          <div class="card-image">
             <a id="open-2">
-              <img src="assets/illumicare_logo.png" alt="IllumiCare">
+              <img class="imp-img zoom" src="assets/illumicare_logo.png" alt="IllumiCare">
             </a>
-            </div>
-        </div>
       </div>
 
       <div class="column">
-        <div class="card">
-          <div class="card-image">
             <a id="open-3">
-              <img src="assets/cw_logo.png" alt="Clearwave">
+              <img class="imp-img zoom" src="assets/cw_logo.png" alt="Clearwave">
           </a>
-        </div>
-      </div>
     </div>
    </div> 
    
    <div class="columns mx-3 has-text-centered ">
     <div class="column">
-      <div class="card">
-        <div class="card-image">
           <a id="open-4">
-            <img src="assets/imprivata_logo.png" alt="Imprivata">
+            <img class="imp-img zoom" src="assets/imprivata_logo.png" alt="Imprivata">
           </a>
-        </div>
-      </div>
     </div>
 
     <div class="column">
-      <div class="card">
-        <div class="card-image">
           <a id="open-5">
-          <img src="assets/spm2_logo.png" alt="SPM">
+          <img class="imp-img zoom" src="assets/spm2_logo.png" alt="SPM">
         </a>  
-        </div>
-      </div>
     </div>
 
     <div class="column">
-      <div class="card">
-        <div class="card-image">
           <a id="open-6">
-            <img src="assets/cipher_logo.png" alt="Cipherhealth">
+            <img class="imp-img zoom" src="assets/cipher_logo.png" alt="Cipherhealth">
         </a>
-        </div>
-      </div>
     </div>
   </div>
  
   <h2 class="has-text-centered mt-5"> 
     Complete <a id="open-7">list of implementations.</a>
-    Company logos are my own.
   </h2>
 </div> 
 </section>
@@ -187,32 +245,26 @@
       <div class="container has-text-centered">
         <h1 class="title"><a id="fed"></a>Front End Development</h1>
         <h2 class="subtitle my-1">
-          Latest progress in Front End Web Development.
+          Latest progress in Front End Development Journey. <a id="">HTML</a> / <a id="">CSS</a> / <a id="">JavaScript</a> / <a id="">React</a>. <a href="https://github.com/charlesaaronj">Github Repo</a>.
         </h2> 
       </div>
   
     <div class="columns mx-6 has-text-centered pt-5">
       <div class="column">
-              <img src="assets/html_1.png" alt="Placeholder image">
-      </div>
+              <img class="zoom" src="assets/html.png" alt="Placeholder image">
+            </div>
         <div class="column">
         
-              <img src="assets/css_1.png" alt="Placeholder image">
-          
+              <img class="zoom" src="assets/js.png" alt="Placeholder image">
     </div>
       <div class="column">
         
-              <img src="assets/js_1.png" alt="Placeholder image">
-          
+              <img class="zoom" src="assets/css.png" alt="Placeholder image">
       </div>
         <div class="column">
-              <img src="assets/react_1.png" alt="Placeholder image">
-          </div>
+              <img class="zoom" src="assets/react.png" alt="Placeholder image">
+            </div>
         </div>
-      <h2 class="has-text-centered"> 
-        <a href="https://github.com/charlesaaronj">Github Repo</a>
-      </h2>
-
     </div>
   </section>
     <section class="section mx-3 pt-3">
@@ -229,33 +281,25 @@
         </div>
   
         <div class="column">
-          <div class="card">
-            <div class="card-image">
-              <a id="open-2">
-                <img src="assets/ai.png" alt="IllumiCare">
+              <a href="https://www.youtube.com/channel/UCXxJ8MJZrxMV-CKhQDhvttg/featured?view_as=subscriber">
+                <img class="imp-img zoom" src="assets/ai.png" alt="Armchair Imagineer">
               </a>
-              </div>
-          </div>
         </div>
   
         <div class="column">
-          <div class="card">
-            <div class="card-image">
-              <a id="open-3">
-                <img src="assets/mydp.png" alt="Clearwave">
+              <a href="https://twitter.com/mydisplanning">
+                <img class="imp-img zoom" src="assets/mydp.png" alt="My Disney Planning">
             </a>
-          </div>
-        </div>
       </div>
       <div class="column"></div>
      </div> 
-         
+    </section>
 
     <section class="section mx-6">
       <div class="container has-text-centered">
-        <h1 class="title"><a id="contact"></a>Contact Me</h1>
+        <h1 class="title"><a id="contact"></a>Interested in anything above?</h1>
         <h2 class="subtitle my-1">
-          test
+          I'd like to hear from you...
         </h2>
       </div>
       <div class="columns pt-5">
@@ -307,12 +351,22 @@
         <button class="button is-link">Send</button>
       </div>
       <div class="control">
-        <button class="button is-link is-light">Cancel</button>
+        <button class="button is-link">Clear</button>
       </div>
     </div>
   </div>
 </div>
 </div>
+  </section>
+
+  <section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Copyright 2020. Closed on Sundays.
+      </p>
+    </div>
+  </footer>
   </section>
 
     <div class="modal" id="modal-1">
@@ -323,7 +377,7 @@
           <button class="delete" aria-label="close" id="close-1"></button>
         </header>
         <section class="modal-card-body">
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+         Medtronic Omnitool.
          Assumenda laudantium in eaque voluptas natus voluptatem, 
          iusto, repellendus fuga ad exercitationem quos ipsam, consequuntur 
          perspiciatis dolores dolorum corrupti eveniet sed nesciunt.
