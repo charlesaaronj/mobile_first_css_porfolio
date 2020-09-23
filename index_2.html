@@ -199,7 +199,7 @@
 
       <div class="columns mx-3 has-text-centered pt-3">
       <div class="column">
-            <a id="open-1"><img class="imp-img zoom" src="assets/med_logo.png" alt="Medtronic Omnitool"></a>
+            <a id="open-1"><img class="open1" id="med_test" src="assets/med_logo.png" alt="Medtronic Omnitool"></a>
       </div>
 
       <div class="column">
@@ -210,7 +210,7 @@
 
       <div class="column">
             <a id="open-3">
-              <img class="imp-img zoom" src="assets/cw_logo.png" alt="Clearwave">
+              <img class="imp-img zoom" id="cw" src="assets/cw_logo.png" alt="Clearwave">
           </a>
     </div>
    </div> 
@@ -295,7 +295,15 @@
      </div> 
     </section>
 
-    <section class="section mx-6">
+    <section class="sent is-hidden my-6">
+      <div class="container has-text-centered">
+        <h1 class="title"><a id="contact"></a>Thanks for reaching out...</h1>
+        <h2 class="subtitle my-1 ">
+          We'll be in touch.
+        </h2>
+    </section>
+
+    <section class="reach section mx-6 ">
       <div class="container has-text-centered">
         <h1 class="title"><a id="contact"></a>Interested in anything above?</h1>
         <h2 class="subtitle my-1">
@@ -304,17 +312,18 @@
       </div>
       <div class="columns pt-5">
         <div class="column is-three-fifths is-offset-one-fifth">
+
     <div class="field">
+      <form id="my-form" action="https://formspree.io/xjvpveda" method="POST">
       <label class="label">Name</label>
       <div class="control">
-        <input class="input" type="text" placeholder="Text input">
+        <input class="input" type="text" name="name" placeholder="Text input">
       </div>
     </div>
-    
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left has-icons-right">
-        <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+        <input class="input is-danger" type="email" name="email" placeholder="Email input" value="hello@">
         <span class="icon is-small is-left">
           <i class="fas fa-envelope"></i>
         </span>
@@ -329,7 +338,7 @@
       <label class="label">Subject</label>
       <div class="control">
         <div class="select">
-          <select>
+          <select name="subject">
             <option>Implementations</option>
             <option>Front End Dev</option>
             <option>Theme Parks</option>
@@ -342,16 +351,18 @@
     <div class="field">
       <label class="label">Message</label>
       <div class="control">
-        <textarea class="textarea" placeholder="Textarea"></textarea>
+        <textarea class="textarea" name="message" placeholder="Textarea"></textarea>
       </div>
     </div>
     
     <div class="field is-grouped">
       <div class="control">
-        <button class="button is-link">Send</button>
+        <button class="button is-link" id="my-form-button">Send</button>
       </div>
       <div class="control">
-        <button class="button is-link">Clear</button>
+        <button class="button is-link" id="clear">Clear</button>
+        <p id="my-form-status"></p>
+      </form>
       </div>
     </div>
   </div>
@@ -369,7 +380,7 @@
   </footer>
   </section>
 
-    <div class="modal" id="modal-1">
+    <div class="modal" id="modal1">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
@@ -386,7 +397,7 @@
       </div>
     </div>
   
-    <div class="modal" id="modal-2">
+    <div class="modal" id="modal2">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
@@ -402,7 +413,7 @@
       </div>
     </div>
 
-    <div class="modal" id="modal-3">
+    <div class="modal" id="modal3">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
@@ -420,7 +431,7 @@
   </div>
 
 
-
+  <a class="anchors" id="myAnchor">HTML</a>
 
 
     <script src="app.js"></script>
