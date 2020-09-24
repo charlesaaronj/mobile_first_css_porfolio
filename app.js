@@ -34,9 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById("my-form");
     const button = document.getElementById("my-form-button");
     const status = document.getElementById("my-form-status");
+    const email = document.getElementById("email");
     const hideField = document.querySelectorAll(".field");
     const reach = document.querySelector('.reach');
     const sent = document.querySelector('.sent');
+
+    form.email.addEventListener('keyup', e=> {
+      if(usernamePattern.test(e.target.value)){
+      form.username.setAttribute('class', 'success');;
+      }else{
+      form.username.setAttribute('class','error')
+      }
 
     // Success and Error functions for after the form is submitted
     
@@ -65,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+
+
   // helper function for sending an AJAX request
 
   function ajax(method, url, data, success, error) {
@@ -82,6 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
     xhr.send(data);
   }
 
+  const email = document.getElementById('email').value;
+ function emailValidate (address) {
+  console.log(address);
+ }
+
+ emailValidate(email);
   //clear contact form
 
   const clear = document.getElementById('clear')
