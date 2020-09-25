@@ -1,0 +1,85 @@
+
+    .navbar, a.navbar{
+      background: #4e5258;
+      color: #fffff0;
+    }
+    .navbar-item, .navbar-link, a.navbar-item:hover{
+    color: #f6edd8;
+    background: none;
+    }
+    a.navbar-item:hover{
+    color: #fffff0;
+    }
+    .navbar-burger {
+    color: #f6edd8;
+    }
+    .navbar-menu {
+      background: #4e5258;
+    }
+    body{
+      background: #4e5258;
+      color: #f6edd8;
+    }
+    hr{
+        border: 1px solid grey;
+    }
+    a{
+      color: #7bbebe;
+    }
+    a:hover{
+      color: #fffff0 
+    }
+    .href{
+      color: #f6edd8;
+    }
+    .title {
+      color: #fffff0;
+    }
+    .subtitle {
+      color: #f6edd8;
+    }
+    .label{
+      color: #f6edd8;
+      font-weight: normal;
+    }
+    .hero-body{
+      background: #7bbebe;
+      border-bottom: 10px double #f6edd8;
+      border-top: 10px double #f6edd8;
+      color: #f6edd8;
+    }
+    .hero.is-light .title{
+      color: #fffff0;
+    }
+    .imp-img{
+      border: 5px double #f6edd8;
+    }
+    .zoom {
+      transition: transform .3s; /* Animation */
+      margin: 0 auto;
+    }
+    .zoom:hover {
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    .help.is-danger {
+    color: #f9bdc9;
+    }   
+    .button.is-link {
+    background-color: #f6edd8;
+    border-color: transparent;
+    color: #4e5258;
+    }
+    .button.is-link:hover {
+    background-color: #fffff0;
+    border-color: transparent;
+    color: #4e5258;
+    }
+    .footer{
+      background: #7bbebe;
+      border-top: 15px double #f6edd8;
+      color: #fffff0;
+    }
+    .modal-card-body{
+      background: #4e5258;
+      color: #fffff0;
+    }
