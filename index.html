@@ -3,91 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <style>
-    .navbar, a.navbar{
-      background: #4e5258;
-      color: #fffff0;
-    }
-    .navbar-item, .navbar-link, a.navbar-item:hover{
-    color: #f6edd8;
-    background: none;
-    }
-    a.navbar-item:hover{
-    color: #fffff0;
-    }
-    .navbar-burger {
-    color: #f6edd8;
-    }
-    .navbar-menu {
-      background: #4e5258;
-    }
-    body{
-      background: #4e5258;
-      color: #f6edd8;
-    }
-    a{
-      color: #7bbebe;
-    }
-    a:hover{
-      color: #fffff0 
-    }
-    .href{
-      color: #f6edd8;
-    }
-    .title {
-      color: #fffff0;
-    }
-    .subtitle {
-      color: #f6edd8;
-    }
-    .label{
-      color: #f6edd8;
-      font-weight: normal;
-    }
-    .hero-body{
-      background: #7bbebe;
-      border-bottom: 10px double #f6edd8;
-      border-top: 10px double #f6edd8;
-      color: #f6edd8;
-    }
-    .hero.is-light .title{
-      color: #fffff0;
-    }
-    .imp-img{
-      border: 5px double #f6edd8;
-    }
-    .zoom {
-      transition: transform .3s; /* Animation */
-      margin: 0 auto;
-    }
-    .zoom:hover {
-      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-    .help.is-danger {
-    color: #f9bdc9;
-    }   
-    .button.is-link {
-    background-color: #f6edd8;
-    border-color: transparent;
-    color: #4e5258;
-    }
-    .button.is-link:hover {
-    background-color: #fffff0;
-    border-color: transparent;
-    color: #4e5258;
-    }
-    .footer{
-      background: #7bbebe;
-      border-top: 15px double #f6edd8;
-      color: #fffff0;
-    }
-    .modal-card-body{
-      background: #4e5258;
-      color: #fffff0;
-    }
-    
-  </style>
+ 
   <title>Aaron Johnston</title>
 </head>
   <body>
@@ -139,7 +57,7 @@
     <section class="hero is-light is-bold is-medium">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title mx-2 zoom">
+          <h1 class="title mx-2">
             — Hi, I’m an 
             implementation project manager, 
             novice front-end developer, and 
@@ -158,7 +76,7 @@
       </div>
     </section>
 
-    <section class="section mx-3">
+    <section class="section mx-3 pb-3">
     <div class="container">
       <div class="container has-text-centered">
         <h1 class="title"><a id="imp"></a>Implementations</h1>
@@ -197,82 +115,88 @@
       </nav>
       <div class="container has-text-centered">
       <h2 class="open-7 my-4">
-        Implementation Highlights
+        Favorite Implementations:
       </h2>
     </div>
     
 
       <div class="columns mx-3 has-text-centered pt-3">
       <div class="column">
-            <a id="open-1"><img class="open1" id="med_test" src="assets/med_logo.png" alt="Medtronic Omnitool"></a>
+            <a id=""><img class="imp-img zoom" id="med_test" src="assets/spm.png" alt="Medtronic Omnitool"></a>
       </div>
 
       <div class="column">
-            <a id="open-2">
-              <img class="imp-img zoom" src="assets/illumicare_logo.png" alt="IllumiCare">
+            <a id="">
+              <img class="imp-img zoom" src="assets/med.png" alt="IllumiCare">
             </a>
       </div>
 
       <div class="column">
-            <a id="open-3">
-              <img class="imp-img zoom" id="cw" src="assets/cw_logo.png" alt="Clearwave">
+            <a id="">
+              <img class="imp-img zoom" id="cw" src="assets/clearwave.png" alt="Clearwave">
           </a>
     </div>
    </div> 
    
    <div class="columns mx-3 has-text-centered ">
     <div class="column">
-          <a id="open-4">
-            <img class="imp-img zoom" src="assets/imprivata_logo.png" alt="Imprivata">
+          <a id="">
+            <img class="imp-img zoom" src="assets/imprivata.png" alt="Imprivata">
           </a>
     </div>
 
     <div class="column">
-          <a id="open-5">
-          <img class="imp-img zoom" src="assets/spm2_logo.png" alt="SPM">
+          <a id="">
+          <img class="imp-img zoom" src="assets/illumicare.png" alt="SPM">
         </a>  
     </div>
 
     <div class="column">
-          <a id="open-6">
-            <img class="imp-img zoom" src="assets/cipher_logo.png" alt="Cipherhealth">
+          <a id="">
+            <img class="imp-img zoom" src="assets/cipherhealth.png" alt="Cipherhealth">
         </a>
     </div>
   </div>
  
   <h2 class="has-text-centered mt-5"> 
-    Complete <a id="open-7">list of implementations.</a>
+    Complete <a id="">list of implementations.</a>
   </h2>
 </div> 
 </section>
-
-    <section class="section mx-3 pt-2">
+<hr>
+    <section class="section mx-3 pt-2 pb-2">
       <div class="container has-text-centered">
         <h1 class="title"><a id="fed"></a>Front End Development</h1>
         <h2 class="subtitle my-1">
-          Latest progress on front end development journey. <a id="">HTML</a> / <a id="">CSS</a> / <a id="">JavaScript</a> / <a id="">React</a>. <a href="https://github.com/charlesaaronj">Github Repo</a>.
+          Latest progress on front end development journey. Check out my <a href="https://github.com/charlesaaronj">Github Repo</a>.
         </h2> 
       </div>
   
     <div class="columns mx-6 has-text-centered pt-5">
+      <div class="column"></div>
       <div class="column">
-              <img class="zoom" src="assets/html.png" alt="Placeholder image">
+              <img class="dev zoom" src="assets/html.png" alt="Placeholder image">
+              <div><a id="">HTML</a></div>
             </div>
         <div class="column">
         
-              <img class="zoom" src="assets/js.png" alt="Placeholder image">
+              <img class="dev zoom" src="assets/css.png" alt="Placeholder image">
+              <div><a id="">CSS</a></div>
     </div>
       <div class="column">
         
-              <img class="zoom" src="assets/css.png" alt="Placeholder image">
+              <img class="dev zoom" src="assets/js.png" alt="Placeholder image">
+              <div><a id="">JavaScript</a></div>
       </div>
         <div class="column">
-              <img class="zoom" src="assets/react.png" alt="Placeholder image">
-            </div>
+              <img class="dev zoom" src="assets/react.png" alt="Placeholder image">
+              <div><a id="">React</a></div>
         </div>
+        <div class="column"></div>
     </div>
   </section>
-    <section class="section mx-3 pt-3">
+  <hr>
+    <section class="section mx-3 pt-3 pb-5">
       <div class="container has-text-centered">
         <h1 class="title"><a id="tpe"></a>Theme Park Enthusiast</h1>
         <h2 class="subtitle my-1">
@@ -280,10 +204,8 @@
         </h2>
       </div>
  
-      <div class="columns mx-3 has-text-centered pt-6">
-        <div class="column">
-          
-        </div>
+      <div class="columns mx-3 has-text-centered pt-5">
+        <div class="column"></div>
   
         <div class="column">
               <a href="https://www.youtube.com/channel/UCXxJ8MJZrxMV-CKhQDhvttg/featured?view_as=subscriber">
@@ -299,16 +221,16 @@
       <div class="column"></div>
      </div> 
     </section>
-
-    <section class="sent is-hidden my-6">
+<hr>
+    <section class="sent is-hidden my-6 pt-0">
       <div class="container has-text-centered">
-        <h1 class="title"><a id="contact"></a>Thanks for reaching out...</h1>
+        <h1 class="title"><a id=""></a>Thanks for reaching out...</h1>
         <h2 class="subtitle my-1 ">
           I'll be in touch.
         </h2>
     </section>
 
-    <section class="reach section mx-6 ">
+    <section class="reach section mx-6 pt-3 ">
       <div class="container has-text-centered">
         <h1 class="title"><a id="contact"></a>Interested in anything above?</h1>
         <h2 class="subtitle my-1">
@@ -379,7 +301,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        Copyright 2020. Closed on Sundays.
+        Copyright <s>2020</s> 2021. Closed on Sundays.
       </p>
     </div>
   </footer>
@@ -392,15 +314,15 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Modal 1</p>
+          <p class="modal-card-title">Medtronic Remote Vent Control</p>
           <button class="delete" aria-label="close" id="close-1"></button>
         </header>
-        <section class="modal-card-body">
-         Medtronic Omnitool.
-         Assumenda laudantium in eaque voluptas natus voluptatem, 
-         iusto, repellendus fuga ad exercitationem quos ipsam, consequuntur 
-         perspiciatis dolores dolorum corrupti eveniet sed nesciunt.
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        <section class="modal-card-body is-size-5">
+          <div>April 2020 - Aug 2020</div>
+          <div class="my-3">Led technical team through workflow design and 
+          implementation in a highly-controlled environment. 
+          High-paced, high-visibility project.</div>
+          Learn more about <a href="">Meditronic Remote Vent Control</a>.
         </section>
       </div>
     </div>
@@ -409,14 +331,15 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Modal 2</p>
+          <p class="modal-card-title">IllumiCare Real-time Cost App -</p>
           <button class="delete" aria-label="close" id="close-2"></button>
         </header>
         <section class="modal-card-body">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-          Assumenda laudantium in eaque voluptas natus voluptatem, 
-          iusto, repellendus fuga ad exercitationem quos ipsam, consequuntur 
-          perspiciatis dolores dolorum corrupti eveniet sed nesciunt. 
+          <div class="is-size-5 my-3">Managed technical Implementation, 
+            data normalization, and analytics reporting build. 
+            ID’d $1M in savings for hospital in yr 1. April  2018 to April 2019.
+          </div>
+            Learn more about <a href="">IllumiCare Real-time Cost App</a>. 
         </section>
       </div>
     </div>

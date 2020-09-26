@@ -54,6 +54,10 @@
     .imp-img{
       border: 5px double #f6edd8;
     }
+    .dev{
+      max-width: 75%;
+      max-height: 75%;
+    }
     .zoom {
       transition: transform .3s; /* Animation */
       margin: 0 auto;

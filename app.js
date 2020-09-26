@@ -34,17 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById("my-form");
     const button = document.getElementById("my-form-button");
     const status = document.getElementById("my-form-status");
-    const email = document.getElementById("email");
     const hideField = document.querySelectorAll(".field");
     const reach = document.querySelector('.reach');
     const sent = document.querySelector('.sent');
 
-    form.email.addEventListener('keyup', e=> {
-      if(usernamePattern.test(e.target.value)){
-      form.username.setAttribute('class', 'success');;
-      }else{
-      form.username.setAttribute('class','error')
-      }
 
     // Success and Error functions for after the form is submitted
     
@@ -92,12 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     xhr.send(data);
   }
 
-  const email = document.getElementById('email').value;
- function emailValidate (address) {
-  console.log(address);
- }
-
- emailValidate(email);
   //clear contact form
 
   const clear = document.getElementById('clear')
@@ -131,11 +118,21 @@ const cont8 = document.getElementById('modal8')
 const cont9 = document.getElementById('modal9')
 const cont10 = document.getElementById('modal10')
 
-open1.addEventListener('click', () => {
-cont1.classList.add('is-active');
-noScroll.classList.add('is-clipped');
-console.log(content);
-});
+// open1.addEventListener('click', () => {
+// cont1.classList.add('is-active');
+// noScroll.classList.add('is-clipped');
+// });
+
+// open2.addEventListener('click', () => {
+//   cont2.classList.add('is-active');
+//   noScroll.classList.add('is-clipped');
+//   });
+
+// open3.addEventListener('click', () => {
+//     cont3.classList.add('is-active');
+//     noScroll.classList.add('is-clipped');
+//     });
+
 
 window.onclick = function(event) {
   let eventar = event.target;
@@ -143,60 +140,67 @@ window.onclick = function(event) {
   console.log(eventar, myClass)
   }
 
-const array = ['.open1','.open2','.open3'];
 
-const found = array.indexOf('.open3');
+
+// const buttonClose1 = document.getElementById('close-1');
+
+// buttonClose1.addEventListener('click', () => {
+// console.log('you clicked me');
+// cont1.classList.remove('is-active');
+// noScroll.classList.remove('is-clipped');
+// });
+
+// backgroundClose.addEventListener('click', () => {
+//   console.log('you clicked me');
+//   cont1.classList.remove('is-active');
+//   noScroll.classList.remove('is-clipped');
+//   });
+
+
+
+// open2.addEventListener('click', () => {
+// console.log('you clicked me');
+// const content = document.getElementById('modal-2')
+// content.classList.add('is-active');
+// noScroll.classList.add('is-clipped');
+// console.log(content);
+// });
+
+// const close2 = document.getElementById('close-2');
+// buttonClose2.addEventListener('click', () => {
+// console.log('you clicked me');
+// const content = document.getElementById('modal-2')
+// content.classList.remove('is-active');
+// noScroll.classList.remove('is-clipped');
+// console.log(content); 
+// });
+    
+// const buttonOpen3 = document.getElementById('open-3');
+// buttonOpen3.addEventListener('click', () => {
+// console.log('you clicked me');
+// const content = document.getElementById('modal-3')
+// content.classList.add('is-active');
+// noScroll.classList.add('is-clipped');
+// console.log(content);
+// });
+
+// const buttonClose3 = document.getElementById('close-3');
+// buttonClose3.addEventListener('click', () => {
+// console.log('you clicked me');
+// const content = document.getElementById('modal-3')
+// content.classList.remove('is-active');
+// noScroll.classList.remove('is-clipped');
+// console.log(content); 
+// }); 
+
+
+
+const array = ['mesty','mest1','test2'];
+
+for(i=0; i < array.length; i++){
+console.log(array[i]);
+};
+
+const found = array.find(test => test.includes('mest'));
 
 console.log(found);
-
-const buttonClose1 = document.getElementById('close-1');
-
-const content = document.getElementById('modal1')
-buttonClose1.addEventListener('click', () => {
-console.log('you clicked me');
-content.classList.remove('is-active');
-noScroll.classList.remove('is-clipped');
-});
-
-backgroundClose.addEventListener('click', () => {
-  console.log('you clicked me');
-  content.classList.remove('is-active');
-  noScroll.classList.remove('is-clipped');
-  });
-
-
-const buttonOpen2 = document.getElementById('open-2');
-buttonOpen2.addEventListener('click', () => {
-console.log('you clicked me');
-const content = document.getElementById('modal-2')
-content.classList.add('is-active');
-noScroll.classList.add('is-clipped');
-console.log(content);
-});
-
-const buttonClose2 = document.getElementById('close-2');
-buttonClose2.addEventListener('click', () => {
-console.log('you clicked me');
-const content = document.getElementById('modal-2')
-content.classList.remove('is-active');
-noScroll.classList.remove('is-clipped');
-console.log(content); 
-});
-    
-const buttonOpen3 = document.getElementById('open-3');
-buttonOpen3.addEventListener('click', () => {
-console.log('you clicked me');
-const content = document.getElementById('modal-3')
-content.classList.add('is-active');
-noScroll.classList.add('is-clipped');
-console.log(content);
-});
-
-const buttonClose3 = document.getElementById('close-3');
-buttonClose3.addEventListener('click', () => {
-console.log('you clicked me');
-const content = document.getElementById('modal-3')
-content.classList.remove('is-active');
-noScroll.classList.remove('is-clipped');
-console.log(content); 
-}); 
