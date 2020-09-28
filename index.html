@@ -122,44 +122,45 @@
 
       <div class="columns mx-3 has-text-centered pt-3">
       <div class="column">
-            <a id=""><img class="imp-img zoom" id="med_test" src="assets/spm.png" alt="Medtronic Omnitool"></a>
+            <a id="" onclick="spm()">
+              <img class="mode imp-img zoom" id="modal1" src="assets/spm.png" alt="Microsystems SPM"></a>
       </div>
 
       <div class="column">
-            <a id="">
-              <img class="imp-img zoom" src="assets/med.png" alt="IllumiCare">
+            <a id="" onclick="med()">
+              <img class="mode imp-img zoom" id="modal2" src="assets/med.png" alt="Medtronic Omnitool">
             </a>
       </div>
 
       <div class="column">
-            <a id="">
-              <img class="imp-img zoom" id="cw" src="assets/clearwave.png" alt="Clearwave">
+            <a id="" onclick="cw()">
+              <img class="mode imp-img zoom" id="modal3" src="assets/clearwave.png" alt="Clearwave">
           </a>
     </div>
    </div> 
    
    <div class="columns mx-3 has-text-centered ">
     <div class="column">
-          <a id="">
-            <img class="imp-img zoom" src="assets/imprivata.png" alt="Imprivata">
+          <a id="" onclick="imprivata()">
+            <img class="mode imp-img zoom" src="assets/imprivata.png" alt="Imprivata">
           </a>
     </div>
 
     <div class="column">
-          <a id="">
-          <img class="imp-img zoom" src="assets/illumicare.png" alt="SPM">
+          <a id="" onclick="illumiCare()">
+          <img class="mode imp-img zoom" src="assets/illumicare.png" alt="IllumiCare">
         </a>  
     </div>
 
     <div class="column">
-          <a id="">
-            <img class="imp-img zoom" src="assets/cipherhealth.png" alt="Cipherhealth">
+          <a id="" onclick="cipherhealth()">
+            <img class="mode imp-img zoom" src="assets/cipherhealth.png" alt="Cipherhealth">
         </a>
     </div>
   </div>
  
   <h2 class="has-text-centered mt-5"> 
-    Complete <a id="">list of implementations.</a>
+    Complete <a id="" class="list" onclick="list()"">list of implementations.</a>
   </h2>
 </div> 
 </section>
@@ -175,22 +176,24 @@
     <div class="columns mx-6 has-text-centered pt-5">
       <div class="column"></div>
       <div class="column">
-              <img class="dev zoom" src="assets/html.png" alt="Placeholder image">
-              <div><a id="">HTML</a></div>
+        <a id="" onclick="html()">
+              <img class="dev" src="assets/html.png" alt="Placeholder image">
+              <div>HTML</div></a>
             </div>
         <div class="column">
-        
-              <img class="dev zoom" src="assets/css.png" alt="Placeholder image">
-              <div><a id="">CSS</a></div>
+          <a id="" onclick="css()">
+              <img class="dev" src="assets/css.png" alt="Placeholder image">
+              <div>CSS</div></a>
     </div>
       <div class="column">
-        
-              <img class="dev zoom" src="assets/js.png" alt="Placeholder image">
-              <div><a id="">JavaScript</a></div>
+        <a id="" onclick="js()">
+              <img class="dev" src="assets/js.png" alt="Placeholder image">
+              <div>JavaScript</div></a>
       </div>
         <div class="column">
-              <img class="dev zoom" src="assets/react.png" alt="Placeholder image">
-              <div><a id="">React</a></div>
+          <a id="" onclick="react()">
+              <img class="dev" src="assets/react.png" alt="Placeholder image">
+              <div>React</div></a>
         </div>
         <div class="column"></div>
     </div>
@@ -307,58 +310,212 @@
   </footer>
 </section>
 
-  
 
-
-    <div class="modal" id="modal1">
+    <div class="html modal" id="modal1">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Medtronic Remote Vent Control</p>
+          <p class="modal-card-title">HTML</p>
           <button class="delete" aria-label="close" id="close-1"></button>
         </header>
         <section class="modal-card-body is-size-5">
-          <div>April 2020 - Aug 2020</div>
-          <div class="my-3">Led technical team through workflow design and 
-          implementation in a highly-controlled environment. 
-          High-paced, high-visibility project.</div>
-          Learn more about <a href="">Meditronic Remote Vent Control</a>.
+          <div>Tutorials I like</div>
+            <div class="my-3">
+              <div><a href="" target="_blank">Coming Soon</a></div>
+              <div><a href="" target="_blank">Coming Soon</a></div>
+              <div><a href="" target="_blank">Coming Soon</a></div>
+            </div>
+            <div class="my-3">Projects I'm working on</div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
         </section>
       </div>
     </div>
   
-    <div class="modal" id="modal2">
+    <div class="css modal" id="modal2">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">IllumiCare Real-time Cost App -</p>
+          <p class="modal-card-title">CSS</p>
           <button class="delete" aria-label="close" id="close-2"></button>
         </header>
-        <section class="modal-card-body">
-          <div class="is-size-5 my-3">Managed technical Implementation, 
-            data normalization, and analytics reporting build. 
-            ID’d $1M in savings for hospital in yr 1. April  2018 to April 2019.
-          </div>
-            Learn more about <a href="">IllumiCare Real-time Cost App</a>. 
+        <section class="modal-card-body is-size-5">
+            <div>Tutorials I like</div>
+            <div class="my-3">
+              <div><a href="" target="_blank">Coming Soon</a></div>
+              <div><a href="" target="_blank">Coming Soon</a></div>
+              <div><a href="" target="_blank">Coming Soon</a></div>
+            </div>
+            <div class="my-3">Projects I'm working on</div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
         </section>
       </div>
     </div>
 
-    <div class="modal" id="modal3">
+    <div class="js modal" id="modal3">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Modal 3</p>
+          <p class="modal-card-title">JavaScript</p>
           <button class="delete" aria-label="close" id="close-3"></button>
         </header>
-        <section class="modal-card-body">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-          Assumenda laudantium in eaque voluptas natus voluptatem, 
-          iusto, repellendus fuga ad exercitationem quos ipsam, consequuntur 
-          perspiciatis dolores dolorum corrupti eveniet sed nesciunt. 
+        <section class="modal-card-body is-size-5">
+          <div>Tutorials I like</div>
+            <div class="my-3">
+              <div><a href="" target="_blank">Coming Soon</a></div>
+              <div><a href="" target="_blank">Coming Soon</a></div>
+              <div><a href="" target="_blank">Coming Soon</a></div>
+            </div>
+            <div class="my-3">Projects I'm working on</div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
         </section>
       </div>
     </div>
+
+    <div class="react modal" id="modal1">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">React</p>
+          <button class="delete" aria-label="close" id="close-1" onclick="myClose()"></button>
+        </header>
+        <section class="modal-card-body is-size-5">
+          <div>Tutorials I like</div>
+            <div class="my-3">
+              <div><a href="" target="_blank">Coming Soon</a></div>
+              <div><a href="" target="_blank">Coming Soon</a></div>
+              <div><a href="" target="_blank">Coming Soon</a></div>
+            </div>
+            <div class="my-3">Projects I'm working on</div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+            <div><a href="" target="_blank">Coming Soon</a></div>
+        </section>
+      </div>
+    </div>
+
+
+    <div class="spm modal" id="modal3">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">SPM</p>
+          <button class="delete" aria-label="close" id="close-3"></button>
+        </header>
+        <section class="modal-card-body is-size-5">
+          <div>Insert</div>
+            <div class="my-3">
+              <div>Insert</div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="med modal" id="modal3">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Omnitool</p>
+          <button class="delete" aria-label="close" id="close-3"></button>
+        </header>
+        <section class="modal-card-body is-size-5">
+          <div>Insert</div>
+            <div class="my-3">
+              <div>Insert</div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="cw modal" id="modal3">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Patient Check-in</p>
+          <button class="delete" aria-label="close" id="close-3"></button>
+        </header>
+        <section class="modal-card-body is-size-5">
+          <div>Insert</div>
+            <div class="my-3">
+              <div>Insert</div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+
+    <div class="imprivata modal" id="modal3">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">e-Prescription</p>
+          <button class="delete" aria-label="close" id="close-3"></button>
+        </header>
+        <section class="modal-card-body is-size-5">
+          <div>Insert</div>
+            <div class="my-3">
+              <div>Insert</div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+
+    <div class="illumiCare modal" id="modal3">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Physician Ribbon</p>
+          <button class="delete" aria-label="close" id="close-3"></button>
+        </header>
+        <section class="modal-card-body is-size-5">
+          <div>Insert</div>
+            <div class="my-3">
+              <div>Insert</div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+
+    <div class="cipherhealth modal" id="modal3">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">CipherRounds</p>
+          <button class="delete" aria-label="close" id="close-3"></button>
+        </header>
+        <section class="modal-card-body is-size-5">
+          <div>Insert</div>
+            <div class="my-3">
+              <div>Insert</div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="full modal" id="modal3">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Implementation List</p>
+          <button class="delete" aria-label="close" id="close-3"></button>
+        </header>
+        <section class="modal-card-body is-size-5">
+          <div>Insert</div>
+            <div class="my-3">
+              <div>Insert</div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+
   </div>
 
 

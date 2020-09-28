@@ -93,114 +93,82 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById("my-form").reset();
   });
 
+
+
+// window.onclick = (event) => {
+//   let eventar = event.target;
+//   let myClass = this.className;
+//   console.log(eventar, myClass)
+//   }
+
+
+const close = document.querySelectorAll('.modal-background');
+const buttonClose = document.querySelectorAll('.delete');
+const modal = document.querySelectorAll('.modal');
 const noScroll = document.querySelector('html');
-const backgroundClose = document.querySelector('.modal-background');
 
-const open1 = document.querySelector('.open1');
-const open2 = document.querySelector('.open2');
-const open3 = document.querySelector('.open3');
-const open4 = document.querySelector('.open4');
-const open5 = document.querySelector('.open5');
-const open6 = document.querySelector('.open6');
-const open7 = document.querySelector('.open7');
-const open8 = document.querySelector('.open8');
-const open9 = document.querySelector('.open9');
-const open10 = document.querySelector('.open10');
-
-const cont1 = document.getElementById('modal1')
-const cont2 = document.getElementById('modal2')
-const cont3 = document.getElementById('modal3')
-const cont4 = document.getElementById('modal4')
-const cont5 = document.getElementById('modal5')
-const cont6 = document.getElementById('modal6')
-const cont7 = document.getElementById('modal7')
-const cont8 = document.getElementById('modal8')
-const cont9 = document.getElementById('modal9')
-const cont10 = document.getElementById('modal10')
-
-// open1.addEventListener('click', () => {
-// cont1.classList.add('is-active');
-// noScroll.classList.add('is-clipped');
-// });
-
-// open2.addEventListener('click', () => {
-//   cont2.classList.add('is-active');
-//   noScroll.classList.add('is-clipped');
-//   });
-
-// open3.addEventListener('click', () => {
-//     cont3.classList.add('is-active');
-//     noScroll.classList.add('is-clipped');
-//     });
-
-
-window.onclick = function(event) {
-  let eventar = event.target;
-  var myClass = this.className;
-  console.log(eventar, myClass)
+for(var i = 0; i<close.length; i++) {
+  close[i].onclick = function() {
+for (i = 0; i < modal.length; ++i) {
+  modal[i].classList.remove('is-active');
+}
+noScroll.classList.remove('is-clipped');
   }
-
-
-
-// const buttonClose1 = document.getElementById('close-1');
-
-// buttonClose1.addEventListener('click', () => {
-// console.log('you clicked me');
-// cont1.classList.remove('is-active');
-// noScroll.classList.remove('is-clipped');
-// });
-
-// backgroundClose.addEventListener('click', () => {
-//   console.log('you clicked me');
-//   cont1.classList.remove('is-active');
-//   noScroll.classList.remove('is-clipped');
-//   });
-
-
-
-// open2.addEventListener('click', () => {
-// console.log('you clicked me');
-// const content = document.getElementById('modal-2')
-// content.classList.add('is-active');
-// noScroll.classList.add('is-clipped');
-// console.log(content);
-// });
-
-// const close2 = document.getElementById('close-2');
-// buttonClose2.addEventListener('click', () => {
-// console.log('you clicked me');
-// const content = document.getElementById('modal-2')
-// content.classList.remove('is-active');
-// noScroll.classList.remove('is-clipped');
-// console.log(content); 
-// });
-    
-// const buttonOpen3 = document.getElementById('open-3');
-// buttonOpen3.addEventListener('click', () => {
-// console.log('you clicked me');
-// const content = document.getElementById('modal-3')
-// content.classList.add('is-active');
-// noScroll.classList.add('is-clipped');
-// console.log(content);
-// });
-
-// const buttonClose3 = document.getElementById('close-3');
-// buttonClose3.addEventListener('click', () => {
-// console.log('you clicked me');
-// const content = document.getElementById('modal-3')
-// content.classList.remove('is-active');
-// noScroll.classList.remove('is-clipped');
-// console.log(content); 
-// }); 
-
-
-
-const array = ['mesty','mest1','test2'];
-
-for(i=0; i < array.length; i++){
-console.log(array[i]);
 };
 
-const found = array.find(test => test.includes('mest'));
+for(var i = 0; i<buttonClose.length; i++) {
+  buttonClose[i].onclick = function() {
+  for (i = 0; i < modal.length; ++i) {
+    modal[i].classList.remove('is-active');
+  }
+  noScroll.classList.remove('is-clipped');
+  }
+};
 
-console.log(found);
+function spm() {
+  document.querySelector('.spm').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+function med() {
+  document.querySelector('.med').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+function cw() {
+  document.querySelector('.cw').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+function imprivata() {
+  document.querySelector('.imprivata').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+function illumiCare() {
+  document.querySelector('.illumiCare').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+function cipherhealth() {
+  document.querySelector('.cipherhealth').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+function list() {
+  document.querySelector('.full').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+function html() {
+  document.querySelector('.html').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+
+function css() {
+  document.querySelector('.css').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+
+function js() {
+  document.querySelector('.js').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
+
+function react() {
+  document.querySelector('.react').classList.add('is-active');
+  noScroll.classList.add('is-clipped');
+}
