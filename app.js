@@ -97,8 +97,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // window.onclick = (event) => {
 //   let eventar = event.target;
-//   let myClass = this.className;
-//   console.log(eventar, myClass)
+//   if (eventar.classList.contains("test")) {
+//   document.querySelector('.modal-test').classList.add('is-active');
+//   if (eventar.classList.contains("injectTest")){
+//   document.querySelector('.title-test').innerHTML += 'Insert Title';
+//   document.querySelector('.content-test').innerHTML += 'Insert Content';
+//   }  
+//   } else {
+//     console.log('false that');
+//   }
+//   console.log(eventar)
 //   }
 
 
@@ -172,3 +180,4 @@ function react() {
   document.querySelector('.react').classList.add('is-active');
   noScroll.classList.add('is-clipped');
 }
+
