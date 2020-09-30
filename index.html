@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
  
-  <title>Aaron Johnston</title>
+  <title>Aaron Johnston</title><a id="top"></a>
 </head>
   <body>
 
@@ -243,17 +243,18 @@
       <div class="columns pt-5">
         <div class="column is-three-fifths is-offset-one-fifth">
 
+        
     <div class="field">
-      <form class="form" id="my-form" action="https://formspree.io/xjvpveda" method="POST">
+      <form class="form" id="my-form" action="https://formspree.io/mknpgvzq" method="POST">
       <label class="label">Name</label>
       <div class="control">
-        <input class="input" type="text" name="name" placeholder="">
+        <input class="input" type="text" name="name" placeholder="" required>
       </div>
     </div>
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left has-icons-right">
-        <input class="input" id="email" type="email" name="email" placeholder="" value="">
+        <input class="input" id="email" type="email" name="email" placeholder="" value="" required pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b">
         <span class="icon is-small is-left">
           <i class="fas fa-envelope"></i>
         </span>
@@ -281,7 +282,7 @@
     <div class="field">
       <label class="label">Message</label>
       <div class="control">
-        <textarea class="textarea" name="message" placeholder=""></textarea>
+        <textarea class="textarea" name="message" placeholder="" required></textarea>
       </div>
     </div>
     
@@ -297,6 +298,12 @@
     </div>
   </div>
 </div>
+</div>
+  </section>
+
+  <section class="section py-4">
+<div class="is-size-6 has-text-centered">
+  <a href="#top">Return to top</a>
 </div>
   </section>
 
