@@ -35,7 +35,7 @@
               <a href="#contact" class="navbar-item">
                 Contact
               </a>
-              <a href="http://charlesaaronj.com/assets/resume.pdf" target="_blank" class="navbar-item">Resume
+              <a href="https://www.canva.com/design/DAEKcuEZT3o/qe0B_AqoyMUgv-e7aRUNBg/view?utm_content=DAEKcuEZT3o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="navbar-item">Resume
               </a>
             </div>
           </div>
@@ -292,7 +292,11 @@
     
     <div class="field is-grouped">
       <div class="control">
-        <button class="button is-link" id="my-form-button">Send</button>
+        <button class="g-recaptcha button is-link" 
+        id="my-form-button"
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Send</button>
       </div>
       <div class="control">
         <button class="button is-link" id="clear">Clear</button>
@@ -593,5 +597,6 @@
   </div>
 
     <script src="app.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>

@@ -66,7 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-
+  function onSubmit(token) {
+    document.getElementById("submit").submit();
+  }
 
   // helper function for sending an AJAX request
 
