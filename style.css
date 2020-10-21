@@ -24,7 +24,7 @@
         border: 1px solid grey;
     }
     a{
-      color: #7bbebe;
+      color: #5bb8d6;
     }
     a:hover{
       color: #fffff0 
@@ -43,7 +43,7 @@
       font-weight: normal;
     }
     .hero-body{
-      background: #7bbebe;
+      background: #5bb8d6;
       border-bottom: 10px double #f6edd8;
       border-top: 10px double #f6edd8;
       color: #f6edd8;
@@ -79,7 +79,7 @@
     color: #4e5258;
     }
     .footer{
-      background: #7bbebe;
+      background: #5bb8d6;
       border-top: 15px double #f6edd8;
       color: #fffff0;
     }
