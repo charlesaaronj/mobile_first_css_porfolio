@@ -35,8 +35,6 @@
               <a href="#contact" class="navbar-item">
                 Contact
               </a>
-              <a href="https://www.canva.com/design/DAEKcuEZT3o/qe0B_AqoyMUgv-e7aRUNBg/view?utm_content=DAEKcuEZT3o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="navbar-item">Resume
-              </a>
             </div>
           </div>
         </div>
@@ -67,6 +65,8 @@
             living in the southeast US.
           </h1>
           <h1 class="has-text-right mr-6 mt-3">
+            <a target="_blank" href="https://www.canva.com/design/DAEKcuEZT3o/qe0B_AqoyMUgv-e7aRUNBg/view?utm_content=DAEKcuEZT3o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" 
+            class="href">Resume</a> /
             <a target="_blank" href="https://www.linkedin.com/in/charlesaaronj/" 
             class="href">LinkedIn</a> /
               <a target="_blank" href="https://www.facebook.com/aeroc33" 
@@ -258,7 +258,7 @@
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left has-icons-right">
-        <input class="input" id="email" type="email" name="email" placeholder="" value="" required pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b">
+        <input class="input" id="email" type="email" name="email" placeholder="" value="" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
         <span class="icon is-small is-left">
           <i class="fas fa-envelope"></i>
         </span>
@@ -292,11 +292,8 @@
     
     <div class="field is-grouped">
       <div class="control">
-        <button class="g-recaptcha button is-link" 
-        id="my-form-button"
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit'>Send</button>
+        <button class="button is-link" 
+        id="my-form-button">Send</button>
       </div>
       <div class="control">
         <button class="button is-link" id="clear">Clear</button>
@@ -319,7 +316,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        Copyright <s>2020</s> 2021. Logos are my own. Closed on Sundays.
+        Copyright 2020. Logos are my own. Closed on Sundays.
       </p>
     </div>
   </footer>
@@ -597,6 +594,5 @@
   </div>
 
     <script src="app.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>
